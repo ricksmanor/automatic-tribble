@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Site - Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
     <header class="bg-gray-800 text-white py-4">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-2xl font-semibold">My Music Site</h1>
+            <a href="index.html" class="text-2xl font-semibold">My Music Site</a>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
                     <li><a href="about.html" class="hover:text-gray-300">About</a></li>
                     <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
                     <li><a href="products.html" class="hover:text-gray-300">Products</a></li>
@@ -22,6 +25,19 @@
             </nav>
         </div>
     </header>
+
+    <section class="bg-gradient-to-r from-yellow-400 to-yellow-700 text-white py-24">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+            <div class="lg:w-1/2">
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-4">Ignite Your Passion for Music</h1>
+                <p class="text-xl lg:text-2xl mb-8">Discover new sounds and unleash your creativity.</p>
+                <a href="#" class="bg-white text-yellow-700 hover:bg-orange-700 hover:text-white font-bold py-3 px-8 rounded-full inline-block">Explore Now</a>
+            </div>
+            <div class="lg:w-1/2 mt-8 lg:mt-0">
+                <img src="sunset.jpg" alt="Music Image" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
     
     <main class="container mx-auto py-8">
         <section class="px-4">
