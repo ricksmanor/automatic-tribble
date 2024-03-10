@@ -5,5 +5,14 @@ footer{
 
 body{
     background-color: rgb(250, 116, 28);
-      
+      background-image: url(sea.jpg);
 }
+
+.box {
+    z-index: -1;
+    --mask:
+      radial-gradient(82.15px at 50% calc(100% + 17.5px),#0000 calc(99% - 20px),#000 calc(101% - 20px) 99%,#0000 101%) calc(50% - 140px) calc(50% - 45px + .5px)/280px 90px ,
+      radial-gradient(82.15px at 50% -17.5px,#0000 calc(99% - 20px),#000 calc(101% - 20px) 99%,#0000 101%) 50% calc(50% + 45px)/280px 90px ;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
